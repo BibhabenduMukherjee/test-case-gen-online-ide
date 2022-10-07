@@ -1,0 +1,22 @@
+{
+  "name": "onlinecodejudge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "execution-time": "^1.4.1",
+    "express": "^4.18.1",
+    "mongoose": "^6.6.5",
+    "pidusage": "^3.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

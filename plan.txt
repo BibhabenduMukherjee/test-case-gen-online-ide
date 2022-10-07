@@ -1,0 +1,29 @@
+api details 
+
+--- we have 2 api routes 
+1. one is to take the incoming request 
+2. sending the details about the a job (by Id )
+
+-- post api (code,language)
+1] generate the filepath and put to the db - [db]
+2] extract the id of the current job
+3] put the current requested job to the queue(worker)
+4] send the any message to the client like submission queued
+
+-- get api (/status?[id])
+1] requesting in every 1s to get the status of the job(Id)
+2] if success we show the output 
+
+--- async worker 
+
+1] push to the queue 
+2] pop out job one by one and execute the code
+3] update the database with poper completion time stamps
+        
+
+The model that is used is non-blocking 
+- it will not block the any users so the throughput will increase
+- (req/sec) maintain
+- event-loop will not be blocked during any operation 
+
+-- redis in memory database is used with bull queue
