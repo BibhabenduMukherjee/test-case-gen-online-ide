@@ -886,7 +886,7 @@ public:
         int size = int(c.size());
         if (size <= 0)
             __testlib_fail("random_t::any(const Container& c): c.size() must be positive");
-        return *(c.begin() + next(size));
+        return *(c.begin() + next (size));
     }
 
     /* Returns random element from iterator range. */
@@ -3572,7 +3572,7 @@ static inline long long stringToLongLong(InStream &in, const char *buffer) {
         return LLONG_MIN;
 
     bool minus = false;
-    size_t length = strlen(buffer);
+    size_t length = strlen(buffer);         
 
     if (length > 1 && buffer[0] == '-')
         minus = true;

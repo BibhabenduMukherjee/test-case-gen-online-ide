@@ -23,7 +23,7 @@ const CodingSchema = mongoose.Schema({
     enum : ["cpp" , "py" , "java"]
  },
   
- filepath: {
+ filePath: {
     type: String,
     required: true,
   },
