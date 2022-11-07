@@ -1,22 +1,4 @@
-/*
- * It is strictly recommended to include "testlib.h" before any other include
- * in your code. In this case testlib overrides compiler specific "random()".
- *
- * If you can't compile your code and compiler outputs something about
- * ambiguous call of "random_shuffle", "rand" or "srand" it means that
- * you shouldn't use them. Use "shuffle", and "rnd.next()" instead of them
- * because these calls produce stable result for any C++ compiler. Read
- * sample generator sources for clarification.
- *
- * Please read the documentation for class "random_t" and use "rnd" instance in
- * generators. Probably, these sample calls will be usefull for you:
- *              rnd.next(); rnd.next(100); rnd.next(1, 2);
- *              rnd.next(3.14); rnd.next("[a-z]{1,100}").
- *
- * Also read about wnext() to generate off-center random distribution.
- *
- * See https://github.com/MikeMirzayanov/testlib/ to get latest version or bug tracker.
- */
+
 
 #ifndef _TESTLIB_H_
 #define _TESTLIB_H_
