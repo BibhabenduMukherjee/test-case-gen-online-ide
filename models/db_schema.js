@@ -9,6 +9,7 @@ startedAt : [Date & required]
 completedAt : [Date &  required]
 status : [string ,  enum[ "pending" , "success" , "error"] ]
 output : [string]
+
 */
 
 
