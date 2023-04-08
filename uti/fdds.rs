@@ -16,7 +16,7 @@ impl<'a> Buf<'a> {
         unsafe { str::from_utf8_unchecked(slice) }
     }
 }
-
+//spec
 impl<'a> Write for Buf<'a> {
     fn write_str(&mut self, s: &str) -> fmt::Result {
         if self.offset + s.len() > self.bytes.len() {
